@@ -3,14 +3,28 @@
 
 Open Distro for Elasticsearch enables you to extract insights out of Elasticsearch using the familiar SQL query syntax. Use aggregations, group by, and where clauses to investigate your data. Read your data as JSON documents or CSV tables so you have the flexibility to use the format that works best for you.
 
+## Demo
+
+Before you dive into the installation and documentation, you may want to get a taste of what our plugin works like. We prepare the following test index `accounts` for you to play around with.
+
+| account_number | firstname | address              | balance | gender | city   | employer | state | age | email                      | lastname | 
+|----------------|-----------|----------------------|---------|--------|--------|----------|-------|-----|----------------------------|----------| 
+| 1              | Amber     | 880 Holmes Lane      | 39225   | M      | Brogan | Pyrami   | IL    | 32  | amberduke@pyrami.com       | Duke     | 
+| 6              | Hattie    | 671 Bristol Street   | 5686    | M      | Dante  | Netagy   | TN    | 36  | hattiebond@netagy.com      | Bond     | 
+| 13             | Nanette   | 789 Madison Street   | 32838   | F      | Nogal  | Quility  | VA    | 28  | nanettebates@quility.com   | Bates    | 
+| 18             | Dale      | 467 Hutchinson Court | 4180    | M      | Orick  | Boink    | MD    | 33  | daleadams@boink.com        | Adams    | 
+| 20             | Elinor    | 282 Kings Place      | 16418   | M      | Ribera | Scentric | WA    | 36  | elinorratliff@scentric.com | Ratliff  | 
+
+(Only show the first 5 rows. Please find the full data set in https://download.elastic.co/demos/kibana/gettingstarted/accounts.zip)
+
+Now you can start to run SQL queries against Elasticsearch:
+
+[test](demo/test.html ':include :type=iframe')
+
+
 ## Documentation
 
 Please refer to the [reference manual](./docs/user/index.rst) and [technical documentation](https://opendistro.github.io/for-elasticsearch-docs) for detailed information on installing and configuring opendistro-elasticsearch-sql plugin. Looking to contribute? Read the instructions on [Development Guide](./docs/developing.rst) and then submit a patch!
-
-
-## Demo
-
-[test](demo/test.html ':include :type=iframe')
 
 
 ## Setup
