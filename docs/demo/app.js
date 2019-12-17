@@ -38,7 +38,7 @@ function examples() {
       var ps1 = $("<span></span>")
         .addClass("monospace")
         .addClass("prompt")
-        .html("redis&gt;&nbsp;");
+        .html("sql&gt;&nbsp;");
       var cmd = $("<span></span>")
         .addClass("monospace")
         .addClass("command")
