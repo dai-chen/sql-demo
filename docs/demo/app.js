@@ -55,7 +55,8 @@ function examples() {
         //url: "/session/" + $example.attr("data-session"),
         //data: $form.serialize(),
         type: "get",
-        url: "http://ec2co-ecsel-1n2oqfionlflu-1608091797.us-west-2.elb.amazonaws.com:9200/_opendistro/_sql?format=jdbc",
+        //url: "http://ec2co-ecsel-1n2oqfionlflu-1608091797.us-west-2.elb.amazonaws.com:9200/_opendistro/_sql?format=jdbc",
+        url: "http://localhost:9200/_opendistro/_sql?format=jdbc",
         data: {
         	"sql": $form.serializeArray()[0].value,
         },
