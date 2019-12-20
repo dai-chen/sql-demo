@@ -55,8 +55,8 @@ function examples() {
         //url: "/session/" + $example.attr("data-session"),
         //data: $form.serialize(),
         type: "get",
-        url: "https://opendistro-demo.us-east-1.es.a9.com:9200/_opendistro/_sql?format=jdbc",
-        //url: "http://localhost:9200/_opendistro/_sql?format=jdbc",
+        //url: "https://opendistro-demo.us-east-1.es.a9.com:9200/_opendistro/_sql?format=jdbc",
+        url: "http://localhost:9200/_opendistro/_sql?format=jdbc",
         data: {
         	"sql": $form.serializeArray()[0].value,
         },
